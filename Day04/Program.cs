@@ -7,7 +7,7 @@ int yMax = inputs.Length;
 char[,] map = new char[xMax, yMax];
 for (int y = 0; y < yMax; y++)
     for (int x = 0; x < xMax; x++)
-        map[x, y] = inputs[y].Substring(x, 1).ToCharArray()[0];
+        map[x, y] = char.Parse(inputs[y].Substring(x, 1));
 
 int part1 = 0;
 int part2 = 0;
